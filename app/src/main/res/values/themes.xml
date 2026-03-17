@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- AppCompatベースのテーマを使用します -->
-    <style name="Theme.TodoApp" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-    </style>
+    <!-- Compose がUI全体を管理するため、ActionBarなしのテーマを使用します -->
+    <style name="Theme.TodoApp" parent="Theme.AppCompat.Light.NoActionBar" />
 </resources>

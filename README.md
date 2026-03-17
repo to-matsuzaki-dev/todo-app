@@ -20,8 +20,8 @@
 | 言語 | Kotlin |
 | 最小SDK | API 24 (Android 7.0) |
 | ターゲットSDK | API 34 (Android 14) |
-| UI | RecyclerView |
-| アーキテクチャ | MVVM（ViewModel + LiveData） |
+| UI | Jetpack Compose + LazyColumn |
+| アーキテクチャ | MVVM（ViewModel + StateFlow） |
 | ビルドツール | Gradle |
 
 ## プロジェクト構成
@@ -32,13 +32,11 @@ app/
   src/main/
     AndroidManifest.xml
     java/com/example/todoapp/
-      MainActivity.kt       # メイン画面
-      TodoViewModel.kt      # ViewModel（データ管理）
-      TodoItem.kt           # Todoアイテムのデータクラス
-      TodoAdapter.kt        # RecyclerViewアダプター
-    res/layout/
-      activity_main.xml     # メイン画面レイアウト
-      item_todo.xml         # リストアイテムのレイアウト
+      MainActivity.kt           # メイン画面（Compose UI）
+      TodoViewModel.kt          # ViewModel（StateFlowでデータ管理）
+      TodoItem.kt               # Todoアイテムのデータクラス
+      ui/theme/
+        Theme.kt                # Material3テーマ
 build.gradle.kts
 settings.gradle.kts
 ```
