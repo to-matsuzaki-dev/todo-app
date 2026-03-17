@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Todo App</string>
+    <string name="hint_enter_todo">Todoを入力してください</string>
+    <string name="add">追加</string>
+    <string name="delete">削除</string>
+</resources>
